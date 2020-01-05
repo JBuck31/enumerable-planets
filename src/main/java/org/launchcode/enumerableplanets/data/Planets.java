@@ -2,12 +2,24 @@ package org.launchcode.enumerableplanets.data;
 
 public enum Planets {
 
-    MERCURY,
-    VENUS,
-    EARTH,
-    MARS,
-    JUPITER,
-    SATURN,
-    URANUS,
-    NEPTUNE
+    MERCURY("Mercury"),
+    VENUS("Venus"),
+    EARTH("Earth"),
+    MARS("Mars"),
+    JUPITER("Jupiter"),
+    SATURN("Saturn"),
+    URANUS("Uranus"),
+    NEPTUNE("Neptune");
+
+    private final String name;
+
+    Planets(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
+
+

@@ -11,7 +11,7 @@
 <h1>Pick a planet:</h1>
 <ul th:field="${planets}">
     <li th:each="planet :${planets}"
-        th:text="${planet}"></li>
+        th:text="${planet.name}"></li>
 </ul>
 
 </body>
